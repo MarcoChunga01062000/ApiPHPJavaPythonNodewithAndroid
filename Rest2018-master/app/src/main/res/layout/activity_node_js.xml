@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NodeJS"
+    android:orientation="vertical"
+    android:padding="50dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NodeJS"
+            android:textSize="32dp"
+            android:textColor="#EB0B0B"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#47A4F5"
+            android:text="Nombres:"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingVertical="5dp"
+            android:textColor="#0A0A0A"
+            android:background="@drawable/edt_estilos"
+            android:id="@+id/nombres"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#47A4F5"
+            android:text="Apellidos:"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_estilos"
+            android:paddingLeft="10dp"
+            android:paddingVertical="5dp"
+            android:textColor="#0A0A0A"
+            android:id="@+id/apellidos"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#47A4F5"
+            android:text="Usuario:"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingVertical="5dp"
+            android:textColor="#0A0A0A"
+            android:background="@drawable/edt_estilos"
+            android:id="@+id/user"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <Button
+            android:id="@+id/btncalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="save"
+            android:background="@drawable/boton_estilos_reset"
+            android:textColor="#E6D33A"
+            android:layout_marginLeft="40dp"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/btnlimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/boton_estilos"
+            android:onClick="reset"
+            android:text="Limpiar"
+            android:textColor="#FAF9F6" />
+    </LinearLayout>
+</LinearLayout>
